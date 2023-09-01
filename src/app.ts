@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(logger("dev"));
 
-app.use("/", accountRoutes);
+app.use("/api", accountRoutes);
 
 const PORT = 3500;
 app.listen(PORT, ()=>{
